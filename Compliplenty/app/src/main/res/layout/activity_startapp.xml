@@ -4,18 +4,23 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteY="0dp"
     tools:layout_editor_absoluteX="0dp">
 
     <Button
         android:id="@+id/icon_profile"
 
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/profile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:text="PROFILE"
+        android:textColor="#FF59BD"
+        android:textSize="15sp"
         tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/icon_contacts"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_logout"
+        app:layout_constraintRight_toRightOf="@+id/icon_up"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,24 +29,29 @@
         android:id="@+id/icon_logout"
 
         android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:background="@drawable/logout"
+        android:layout_height="0dp"
+
+        android:text="LOGOUT"
+        android:textColor="#FF59BD"
+        android:textSize="15sp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_contacts"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="11dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/icon_contacts"
 
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="100dp"
-        android:background="@drawable/addressbook"
+
+        android:text="CONTACTS"
+        android:textColor="#FF59BD"
+        android:textSize="15sp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
@@ -49,81 +59,71 @@
         app:layout_constraintLeft_toLeftOf="@+id/icon_down"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginStart="42dp"
-        android:src="@drawable/tbox"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/icon_down"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="61dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="63dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/icon_profile" />
-
     <TextView
         android:id="@+id/compliment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Compliment"
         android:textSize="20sp"
-        android:layout_marginEnd="36dp"
-        app:layout_constraintRight_toLeftOf="@+id/icon_contacts"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/icon_share"
-        android:layout_marginTop="169dp"
-        android:layout_marginBottom="168dp"
-        app:layout_constraintTop_toTopOf="@+id/icon_contacts" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="230dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/icon_up"
 
-        android:layout_width="88dp"
+        android:layout_width="75dp"
         android:layout_height="75dp"
+
+        android:text="UP"
+        android:textColor="#FF59BD"
+        android:textSize="15sp"
         android:layout_marginStart="25dp"
-        android:background="@drawable/up"
-        app:layout_constraintBaseline_toBaselineOf="@+id/icon_share"
-        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/icon_question"
         tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="30dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/icon_share"
 
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
 
         android:text="SHARE"
         android:textColor="#FF59BD"
         android:textSize="15sp"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_up"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="150dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/icon_up" />
 
     <Button
         android:id="@+id/icon_down"
 
-        android:layout_width="88dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
 
-        android:background="@drawable/down"
+        android:text="DOWN"
+        android:textColor="#FF59BD"
+        android:textSize="15sp"
+        android:layout_marginEnd="24dp"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_up"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBaseline_toBaselineOf="@+id/icon_share"
-        tools:layout_constraintBaseline_creator="1" />
+        app:layout_constraintTop_toTopOf="@+id/icon_up" />
 
     <Button
         android:id="@+id/icon_question"
@@ -134,29 +134,27 @@
         android:text="Question"
         android:textColor="#FF59BD"
         android:textSize="15sp"
-        android:layout_marginStart="91dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/icon_random"
-        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/icon_random"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="27dp"
+        app:layout_constraintLeft_toRightOf="@+id/icon_up" />
 
     <Button
         android:id="@+id/icon_random"
 
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
 
         android:text="Random"
         android:textColor="#FF59BD"
         android:textSize="15sp"
-        android:layout_marginStart="11dp"
-        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/icon_share"
+        app:layout_constraintRight_toRightOf="@+id/icon_question"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="50dp"
-        app:layout_constraintLeft_toRightOf="@+id/icon_question" />
+        app:layout_constraintLeft_toLeftOf="@+id/icon_question" />
 
 </android.support.constraint.ConstraintLayout>
