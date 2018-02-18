@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Compliplenty</string>
+    <string name="title_activity_contacts">Contacts</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="title_activity_my_app">MyApp</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_question">Question</string>
+    <string name="title_activity_start_app">StartApp</string>
+</resources>
