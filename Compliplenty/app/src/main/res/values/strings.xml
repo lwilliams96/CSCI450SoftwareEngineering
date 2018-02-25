@@ -5,4 +5,8 @@
     <string name="Mr_Bean">Mr. Bean</string>
     <string name="Ash_Ketchum">Ash Ketchum</string>
 
+    <string name="facebook_app_id">171667173465799</string>
+    <string name="fb_login_protocol_scheme">fb171667173465799</string>
+
+
 </resources>

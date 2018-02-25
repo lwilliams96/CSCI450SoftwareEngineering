@@ -4,28 +4,26 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.facebook.AccessToken;
+
 public class Initialize extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        final MyApp mApp = (MyApp) getApplicationContext();
-
-        setContentView(R.layout.activity_initialize);
-
-        Boolean loggedIn = mApp.getLoggedIn();
+        AccessToken token;
+        token = AccessToken.getCurrentAccessToken();
 
         Intent intent;
 
-        if (loggedIn == false) {
-
+        if (token == null) {
             intent = new Intent(Initialize.this, LogIn.class);
             Initialize.this.startActivity(intent);
-        } else {
+        }
+        else{
             intent = new Intent(Initialize.this, StartApp.class);
             Initialize.this.startActivity(intent);
-
         }
     }
 }
