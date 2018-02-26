@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class Profile extends AppCompatActivity {
 
 
@@ -36,9 +38,18 @@ public class Profile extends AppCompatActivity {
             }
         });
 
+        final Intent profileToLikeList = new Intent (this, LikeList.class);
         viewLikeList.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                String putExtraHelper;
+                ArrayList<String> listOfLikes = new ArrayList<String>();
+                for(int i = 0; i < listOfLikes.size(); i++) {
+                    putExtraHelper = "Compliment ";
+                    putExtraHelper = putExtraHelper + i;
+                    profileToLikeList.putExtra(putExtraHelper, "" + listOfLikes.get(i));
+                }
                 Toast.makeText(Profile.this, "Like List", Toast.LENGTH_SHORT).show();
+                startActivity(profileToLikeList);
             }
         });
 
