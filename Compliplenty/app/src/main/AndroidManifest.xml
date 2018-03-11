@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:name=".MyApp"
         android:allowBackup="true"
@@ -50,6 +51,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".LikeList"></activity>
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider{171667173465799}"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
     </application>
+
 
 </manifest>
