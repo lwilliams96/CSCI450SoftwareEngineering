@@ -50,6 +50,18 @@ public class LogIn extends AppCompatActivity{
 
 
         });
+
+        Button cheat;
+        cheat = (Button) findViewById(R.id.icon_cheat);
+
+        cheat.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(LogIn.this, StartApp.class);
+                LogIn.this.startActivity(intent);
+            }
+        });
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
