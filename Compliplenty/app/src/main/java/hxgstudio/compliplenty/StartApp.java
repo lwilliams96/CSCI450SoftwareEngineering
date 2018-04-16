@@ -1,10 +1,8 @@
 package hxgstudio.compliplenty;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,15 +11,18 @@ import android.widget.Toast;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
-import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.facebook.share.Sharer;
-import com.facebook.share.model.ShareHashtag;
 import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.widget.ShareButton;
 import com.facebook.share.widget.ShareDialog;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
 
 public class StartApp extends AppCompatActivity {
 
@@ -32,13 +33,20 @@ public class StartApp extends AppCompatActivity {
 
 
 
-    @Override
+
+
+
+
+    public static final String COMPLIMENT = "compliments";
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         callbackManager = CallbackManager.Factory.create();
         shareDialog = new ShareDialog(this);
 
         setContentView(R.layout.activity_startapp);
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
 
         Button profile, logout, contacts, up, share, down, question, random;
         profile = (Button) findViewById(R.id.icon_profile);
@@ -82,7 +90,11 @@ public class StartApp extends AppCompatActivity {
         });
         up.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(StartApp.this, "Upvoted!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(StartApp.this, "Upvoted!!", Toast.LENGTH_SHORT).show();//TODO
+                String pulledQuote = "you perty";
+                Intent intent = new Intent(getBaseContext(), LikeList.class);
+                intent.putExtra("quote",pulledQuote);
+                startActivity(intent);
             }
         });
 
@@ -123,6 +135,14 @@ public class StartApp extends AppCompatActivity {
             }
         });
 
+
+
+
+    }
+    //delimiter for
+    public void AddCompliment(){
+        Map<String, Object> compliment = new HashMap<>();
+        compliment.put(COMPLIMENT, "test string");
     }
 
     @Override

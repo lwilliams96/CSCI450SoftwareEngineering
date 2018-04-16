@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1078368456611",
+    "firebase_url": "https://compliplenty.firebaseio.com",
+    "project_id": "compliplenty",
+    "storage_bucket": "compliplenty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078368456611:android:714e7c6dd412f114",
+        "android_client_info": {
+          "package_name": "hxgstudio.compliplenty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078368456611-h1j0jega2bqiq074go80gv94clhm51fk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hxgstudio.compliplenty",
+            "certificate_hash": "ed6b5f159b8f109b44b8a44f392410f21fd0cdb1"
+          }
+        },
+        {
+          "client_id": "1078368456611-evr0arfpraoeam55s3317ggek34bmu0v.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1078368456611-dl0ee9p4hlsg62ge23867lkj16tpapdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYqTJtJFjLhDK9iobMhUFLUOtKkj5FK8k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078368456611-evr0arfpraoeam55s3317ggek34bmu0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

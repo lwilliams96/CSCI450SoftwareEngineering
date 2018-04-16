@@ -1,14 +1,13 @@
 package hxgstudio.compliplenty;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class LikeList extends AppCompatActivity {
@@ -18,6 +17,9 @@ public class LikeList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_like_list);
+
+        String quote = getIntent().getStringExtra("quote");
+        Toast.makeText(LikeList.this, quote, Toast.LENGTH_SHORT).show();//TODO
 
         likeListView = (ListView) findViewById(R.id.likeListView);
 
@@ -36,8 +38,12 @@ public class LikeList extends AppCompatActivity {
         }
 
         ArrayAdapter<String> likeListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, arrayOfLikes);
-
+        arrayOfLikes.add(quote);
         likeListView.setAdapter(likeListAdapter);
+
+
+
+
 
         likeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
