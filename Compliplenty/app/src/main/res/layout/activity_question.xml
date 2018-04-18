@@ -9,4 +9,23 @@
         android:text="Question"
         android:textSize="20sp"/>
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_question"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button_yes"
+        android:text="YES"
+        android:layout_width="100dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/button_no"
+        android:text="NO"
+        android:layout_width="100dp"
+        android:layout_height="50dp"/>
+
 </LinearLayout>

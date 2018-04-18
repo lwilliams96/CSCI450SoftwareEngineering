@@ -8,5 +8,44 @@
     <string name="facebook_app_id">171667173465799</string>
     <string name="fb_login_protocol_scheme">fb171667173465799</string>
 
+    <string-array name="questions">
+        <item>0</item>
+        <item>Male or Female?</item>
+        <item>Romantic or Friendly</item>
+        <item>Romantic or Friendly</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="compliment_question">
+        <item>Compliment 0</item>
+        <item>Compliment 1</item>
+        <item>Compliment 2</item>
+        <item>Compliment 3</item>
+        <item>Compliment 4</item>
+        <item>Compliment 5</item>
+        <item>Compliment 6</item>
+        <item>Compliment 7</item>
+        <item>Compliment 8</item>
+        <item>Compliment 9</item>
+        <item>Compliment 10</item>
+        <item>Compliment 11</item>
+        <item>Compliment 12</item>
+        <item>Compliment 13</item>
+        <item>Compliment 14</item>
+        <item>Compliment 15</item>
+        <item>Compliment 16</item>
+    </string-array>
+
 
 </resources>

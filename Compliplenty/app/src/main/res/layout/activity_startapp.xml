@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="@+id/icon_profile" />
 
     <TextView
-        android:id="@+id/compliment"
+        android:id="@+id/main_compliment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Compliment"

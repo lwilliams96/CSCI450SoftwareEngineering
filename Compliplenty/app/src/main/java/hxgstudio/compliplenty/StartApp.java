@@ -26,7 +26,7 @@ import java.util.Map;
 
 public class StartApp extends AppCompatActivity {
 
-    private TextView info;
+    private TextView info, mainCompliment;
     private LoginButton loginButton;
     private CallbackManager callbackManager;
     private ShareDialog shareDialog;
@@ -46,6 +46,15 @@ public class StartApp extends AppCompatActivity {
 
         setContentView(R.layout.activity_startapp);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        Bundle bundle = getIntent().getExtras();
+        String qCompliment= bundle.getString("compliment");
+
+
+
+        mainCompliment = (TextView)findViewById(R.id.main_compliment);
+        if(qCompliment != null)
+            mainCompliment.setText(qCompliment);
 
 
         Button profile, logout, contacts, up, share, down, question, random;
