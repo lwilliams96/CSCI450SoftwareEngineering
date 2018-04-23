@@ -11,13 +11,13 @@
     <string-array name="questions">
         <item>0</item>
         <item>Male or Female?</item>
-        <item>Romantic or Friendly</item>
-        <item>Romantic or Friendly</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
+        <item>Is it Romantic?</item>
+        <item>Is it Romantic?</item>
+        <item>Would you like to comment on their hair?</item>
+        <item>Would you like to comment on their hair?2</item>
+        <item>Would you like to comment on their clothes?</item>
+        <item>Would you like to comment on their clothes?2</item>
+        <item></item>
         <item>9</item>
         <item>10</item>
         <item>11</item>
@@ -46,6 +46,9 @@
         <item>Compliment 15</item>
         <item>Compliment 16</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
