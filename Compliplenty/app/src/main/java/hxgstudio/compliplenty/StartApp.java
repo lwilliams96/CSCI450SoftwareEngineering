@@ -48,7 +48,7 @@ public class StartApp extends AppCompatActivity {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         Bundle bundle = getIntent().getExtras();
-        String qCompliment= bundle.getString("compliment");
+        final String qCompliment= bundle.getString("compliment");
 
 
 
@@ -99,8 +99,10 @@ public class StartApp extends AppCompatActivity {
         });
         up.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(StartApp.this, "Upvoted!!", Toast.LENGTH_SHORT).show();//TODO
-                String pulledQuote = "you perty";
+                Toast.makeText(StartApp.this, "Upvoted!!"+ qCompliment, Toast.LENGTH_SHORT).show();//TODO
+//                String pulledQuote = "you perty";
+                String pulledQuote = qCompliment;
+
                 Intent intent = new Intent(getBaseContext(), LikeList.class);
                 intent.putExtra("quote",pulledQuote);
                 startActivity(intent);

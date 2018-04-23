@@ -48,7 +48,7 @@ public class LikeList extends AppCompatActivity {
         likeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                int likePosition = position;
+                int likePosition = position++;
                 String compliment = (String) likeListView.getItemAtPosition(position);
 
                 Toast.makeText(getApplicationContext(), "Position: " + likePosition + "\tCompliment: " + compliment, Toast.LENGTH_LONG).show();
