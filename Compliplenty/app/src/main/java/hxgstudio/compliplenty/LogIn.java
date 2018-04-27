@@ -30,7 +30,7 @@ public class LogIn extends AppCompatActivity{
         info = (TextView)findViewById(R.id.info);
         loginButton = (LoginButton)findViewById(R.id.login_button);
 
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+        /*loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 Intent intent;
@@ -49,12 +49,9 @@ public class LogIn extends AppCompatActivity{
             }
 
 
-        });
+        });*/
 
-        Button cheat;
-        cheat = (Button) findViewById(R.id.icon_cheat);
-
-        cheat.setOnClickListener(new View.OnClickListener() {
+        loginButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent;
                 intent = new Intent(LogIn.this, StartApp.class);

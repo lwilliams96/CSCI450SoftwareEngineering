@@ -1,5 +1,6 @@
 package hxgstudio.compliplenty;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -24,7 +25,7 @@ import java.util.ArrayList;
 import static com.facebook.FacebookSdk.getApplicationContext;
 
 public class Profile extends FragmentActivity implements OptionDialog.OptionDialogListener {
-
+    private static final int CAMERA_REQUEST = 1888;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class Profile extends FragmentActivity implements OptionDialog.OptionDial
         editProfile = (Button) findViewById(R.id.icon_settings);
         contacts = (Button) findViewById(R.id.icon_contacts);
         viewLikeList = (Button) findViewById(R.id.icon_likelist);
+
 
         editProfile.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -82,9 +84,8 @@ public class Profile extends FragmentActivity implements OptionDialog.OptionDial
     @Override
     public void onDialogPositiveClick(DialogFragment dialog) {
         // User touched the dialog's positive button
-        Intent intent;
-        intent = new Intent("android.media.action.IMAGE_CAPTURE");
-        startActivity(intent);
+        Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(cameraIntent, CAMERA_REQUEST);
     }
 
     @Override
@@ -116,7 +117,14 @@ public class Profile extends FragmentActivity implements OptionDialog.OptionDial
                 } else {
                     Toast.makeText(Profile.this, "You haven't picked Image", Toast.LENGTH_LONG).show();
                 }
+            case 1888:
+                if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK) {
+                    Bitmap photo = (Bitmap) data.getExtras().get("data");
+                    ImageView img = findViewById(R.id.imageView_profile);
+                    img.setImageBitmap(photo);
+                }
         }
+
         ;
     }
 }

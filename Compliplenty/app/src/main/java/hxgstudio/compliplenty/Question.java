@@ -39,7 +39,7 @@ public class Question extends AppCompatActivity {
                     Intent i = new Intent(Question.this, StartApp.class);
                     compNum = (qNum * 2) - 15;
                     String str_comp[] = res.getStringArray(R.array.compliment_question);
-                    Toast.makeText(Question.this, str_comp[compNum], Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Question.this, str_comp[compNum], Toast.LENGTH_SHORT).show();
                     Bundle bundle = new Bundle();
                     bundle.putString("compliment", str_comp[compNum]);
                     i.putExtras(bundle);
@@ -61,7 +61,7 @@ public class Question extends AppCompatActivity {
                     Intent i = new Intent(Question.this, StartApp.class);
                     compNum = (qNum * 2) - 14;
                     String str_comp[] = res.getStringArray(R.array.compliment_question);
-                    Toast.makeText(Question.this, str_comp[compNum], Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Question.this, str_comp[compNum], Toast.LENGTH_SHORT).show();
                     Bundle bundle = new Bundle();
                     bundle.putString("compliment", str_comp[compNum]);
                     i.putExtras(bundle);

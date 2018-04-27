@@ -10,41 +10,41 @@
 
     <string-array name="questions">
         <item>0</item>
-        <item>Male or Female?</item>
+        <item>Complimenting a Male?</item>
         <item>Is it Romantic?</item>
         <item>Is it Romantic?</item>
         <item>Would you like to comment on their hair?</item>
-        <item>Would you like to comment on their hair?2</item>
+        <item>Would you like to comment on their hair?</item>
+        <item>Would you like to comment on their hair?</item>
+        <item>Would you like to comment on their hair?</item>
+        <item>Do they have light colored hair?</item>
         <item>Would you like to comment on their clothes?</item>
-        <item>Would you like to comment on their clothes?2</item>
-        <item></item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
+        <item>Do they have light colored hair?</item>
+        <item>Would you like to comment on their clothes?</item>
+        <item>Do they have light colored hair?</item>
+        <item>Would you like to comment on their clothes?</item>
+        <item>Do they have light colored hair?</item>
+        <item>Would you like to comment on their clothes?</item>
     </string-array>
 
     <string-array name="compliment_question">
         <item>Compliment 0</item>
-        <item>Compliment 1</item>
-        <item>Compliment 2</item>
-        <item>Compliment 3</item>
-        <item>Compliment 4</item>
-        <item>Compliment 5</item>
-        <item>Compliment 6</item>
-        <item>Compliment 7</item>
-        <item>Compliment 8</item>
-        <item>Compliment 9</item>
-        <item>Compliment 10</item>
-        <item>Compliment 11</item>
-        <item>Compliment 12</item>
-        <item>Compliment 13</item>
-        <item>Compliment 14</item>
-        <item>Compliment 15</item>
-        <item>Compliment 16</item>
+        <item>Your hair glows as bright as my heart when I see you!</item>
+        <item>You have the hair of Prince Charming, and the looks to go with it!</item>
+        <item>Your shirt grips your body in all the right ways!</item>
+        <item>Your eyes are like gorgeous gems that I would love to get lost in!</item>
+        <item>Your hair looks really nice today!</item>
+        <item>Your hair looks really nice today!</item>
+        <item>I really like that shirt, where did you get it?</item>
+        <item>You look really good, have you been working out?</item>
+        <item>If you were Rapunzel, I would climb the tower to save you!</item>
+        <item>Your hair looks like chocolate and smells just as sweet!</item>
+        <item>Were those clothes on sale? Because they would be 100% off at my place!</item>
+        <item>You are so beautiful that even Aphrodite would be jealous!</item>
+        <item>Your hair looks really nice today!</item>
+        <item>Your hair looks really nice today!</item>
+        <item>Your clothes make your eyes look really nice!</item>
+        <item>You look very beautitful today!</item>
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
